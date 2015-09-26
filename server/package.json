@@ -1,0 +1,16 @@
+{
+  "name": "BuildServerAPI",
+  "version": "0.1.0",
+  "description": "Build server API",
+  "main": "server.js",
+  "author": {
+    "name": "Rami Hadi",
+    "email": "rabdelhadi@buildfire.com"
+  },
+  "dependencies": {
+    "express": "4.0.*",
+    "cors": "2.6.*",
+    "body-parser": "1.11.*",
+    "mysql": "2.3.*"
+  }
+}

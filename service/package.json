@@ -1,0 +1,19 @@
+﻿{
+  "name": "CurrencyExchangeService",
+  "author": "Rami Abdel Hadi",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/main.js",
+   "author": [
+    {
+      "name" : "Rami Abdel Hadi",
+      "email": "rami.bashar.abdel.hadi@gmail.com"
+    }
+  ],
+  "dependencies": {
+	"request"			: "2.33.x",
+    "mysql": "2.3.*",
+    "xmldoc" : "*"
+
+  }
+}

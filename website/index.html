@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CCC Exchange Rates Demo</title>
+  <link href="bootstrap/bootstrap.css" rel="stylesheet">
+  <script src="angular/angular.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-app="app" class="container" ng-controller="appCtrl">
+
+  <form class="form-inline">
+    <legend>Currency Exchange Rate Converter</legend>
+
+    <div class="row">
+      <label class="span1">From</label>
+      <select  ng-model="fromCurrency"  class="span3" ng-options="item.currency as item.currency for item in usdRates" ng-change="getConvertedValue()">
+        <option value="">-- Please Select a Currency --</option>
+      </select>
+      <input ng-model="value" type="text" valid-number class="span2" ng-change="getConvertedValue()">
+    </div>
+
+    <div class="row">
+      <label class="span1">To</label>
+      <select  ng-model="toCurrency" class="span3" ng-options="item.currency as item.currency for item in usdRates" ng-change="getConvertedValue()">
+        <option value="">-- Please Select a Currency --</option>
+      </select>
+      <input ng-model="convertedValue" readonly class="span2">
+    </div>
+
+    <legend>Today USD Rate</legend>
+    <div class="row" ng-repeat="usdRate in usdRates">
+      <label class="span1">{{usdRate.currency}}</label>
+      <label class="span1">{{usdRate.rate}}</label>
+    </div>
+
+  </form>
+
+</body>
+</html>
