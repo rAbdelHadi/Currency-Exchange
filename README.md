@@ -24,7 +24,7 @@ the server and the service configuration files.
 2. Run **Currency-Exchange\server\run server** command for starting the currency exchange server
 3. Browse\Currency-Exchange\website\index.html file.
 
-## Design overview :
+## Design overview
 ### Currency Exchange Service : 
 responsible to get the currency exchange rates from the third party and insert these rates in the DB.
 
