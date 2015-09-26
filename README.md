@@ -24,7 +24,7 @@ the server and the service configuration files.
 2. Run **Currency-Exchange\server\run server** command for starting the currency exchange server
 3. Browse\Currency-Exchange\website\index.html file.
 
-## Desing overview :
+## Design overview :
 ### Currency Exchange Service : 
 responsible to get the currency exchange rates from the third party and insert these rates in the DB.
 
@@ -34,11 +34,11 @@ responsible to get the currency exchange rates from the third party and insert t
 
 ### Currency Exchange Server  
  responsible for the Restful API .
-* Restful API :
-1. convert : convert a given value from currency to currency using the latest rates .
+#### Restful API :
+* convert : convert a given value from currency to currency using the latest rates .
   * http Method : GET
   * params : fromCurrency , toCurrency , value
-2. getRates  : get all curency rates for a specifc currency 
+* getRates  : get all curency rates for a specifc currency 
   * http Method : GET
   * params : currency
 
